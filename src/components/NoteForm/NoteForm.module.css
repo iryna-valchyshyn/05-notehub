@@ -1,0 +1,20 @@
+.form { display: flex; flex-direction: column; gap: 18px; }
+.heading { margin: 0 0 4px; font-size: 23px; }
+.formGroup { display: flex; flex-direction: column; gap: 7px; }
+.formGroup label { font-weight: 600; font-size: 14px; }
+.input, .textarea, .select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d8dce6;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+}
+.input:focus, .textarea:focus, .select:focus { border-color: #5967d9; }
+.textarea { resize: vertical; }
+.error { color: #c33b48; font-size: 12px; }
+.actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 4px; }
+.cancelButton, .submitButton { padding: 10px 16px; border: 0; border-radius: 8px; }
+.cancelButton { background: #eef0f5; color: #343946; }
+.submitButton { background: #5967d9; color: #fff; }
+.submitButton:disabled { opacity: .6; cursor: wait; }
